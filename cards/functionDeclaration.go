@@ -4,7 +4,7 @@ import "fmt"
 
 // Explicitly indicate the return type value in a function declaration!
 func newCard() string {
-	return "Five of Diamons"
+	return "Five of Diamonds"
 }
 
 func createNewCard() {
