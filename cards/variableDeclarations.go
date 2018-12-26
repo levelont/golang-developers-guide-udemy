@@ -12,7 +12,7 @@ var variableWithtValue string = "value"
 //shortHandDeclaredVariable := "shortHandValue"
 //produces: syntax error: non-declaration statement outside function body
 
-func main() {
+func declareVariables() {
 	//Long form declaration
 	// var card string = "Ace of Spades"
 	//Golang is a statically typed language!
