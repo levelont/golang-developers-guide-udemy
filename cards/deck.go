@@ -10,6 +10,22 @@ import "fmt"
 // which is a slice of strings
 type deck []string
 
+func newDeck() deck {
+	cards := deck{}
+
+	cardSuits := []string{"Spades", "Hearts", "Diamonds", "Clubs"}
+	cardValues := []string{"Ace", "Two", "Three", "Four"}
+
+	//none of the indexes are needed. underscore them!
+	for _, suit := range cardSuits {
+		for _, value := range cardValues {
+			cards = append(cards, value+" of "+suit)
+		}
+	}
+
+	return cards
+}
+
 // Receiver of the function
 // any variable of type deck gets access to the attached method
 // A receiver sets up methods on variables we create
